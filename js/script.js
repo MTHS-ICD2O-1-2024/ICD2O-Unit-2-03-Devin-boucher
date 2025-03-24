@@ -1,17 +1,18 @@
 // Copyright (c) 2020 Mr. Coxall All rights reserved
 //
-// Created by: Mr. Coxall
+// Created by: Devin Boucher
 // Created on: Mar 2025
 // This file contains the JS functions for index.html
 
 /**
- * Do basic math.
+ * Gets user street number and street name, then displays it.
  */
 function enterClicked() {
   // input
-  const firstName = document.getElementById("first-name").value
-  const userAge = parseInt(document.getElementById("age-entered").value)
+  const streetNumber = parseInt(document.getElementById("street-number").value)
+  const streetName = document.getElementById("street-name").value
+
   // output
   document.getElementById("user-info").innerHTML =
-    "Your info is: " + firstName + ", " + userAge + "."
+    "Your address is: " + streetNumber + " " + streetName + "."
 }
